@@ -22,7 +22,7 @@ int getFingerprintIDez();
 
 // pin #2 is IN from sensor (GREEN wire)
 // pin #3 is OUT from arduino  (WHITE wire)
-SoftwareSerial mySerial(2, 3);
+SoftwareSerial mySerial(8, 9);
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
 
 // On Leonardo/Micro or others with hardware serial, use those! #0 is green wire, #1 is white
