@@ -60,9 +60,7 @@ uint8_t readnumber(void) {
     if (isdigit(c)) {
        num *= 10;
        num += c - '0';
-       validnum = true;
-    } else if (validnum) {
-      return num;
+       return num;
     }
   }
 }
